@@ -1,0 +1,51 @@
+.women-container {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(to right, #f6f9ff, #ffe6f0);
+  min-height: 100vh;
+}
+
+.women-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.woman-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.woman-card:hover {
+  transform: scale(1.05);
+}
+
+.woman-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.woman-card h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #3f3f3f;
+}
+
+.woman-card .quote {
+  font-style: italic;
+  color: #8c2f39;
+  margin: 0.5rem 0;
+}
+
+.woman-card .work {
+  font-size: 0.9rem;
+  color: #555;
+}

@@ -1,0 +1,78 @@
+/* Global styles for the page */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top, #cde9ff, #ffffff);
+  animation: floatClouds 40s linear infinite;
+  overflow-x: hidden;
+}
+
+/* Floating clouds animation */
+@keyframes floatClouds {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* Glowing gradient button */
+.glow-button {
+  background: linear-gradient(90deg, #ff80ab, #ffc1e3);
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #ffb6c1;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: transform 0.2s ease-in-out;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+}
+
+/* Pulse effect */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #ffb6c1;
+  }
+  50% {
+    box-shadow: 0 0 25px #ff69b4;
+  }
+}
+
+/* Sky background for sections */
+.sky-bg {
+  background: linear-gradient(to bottom, #d4f1ff, #ffffff);
+  min-height: 100vh;
+  padding: 2rem;
+  position: relative;
+}
+
+.sky-bg::before {
+  content: "";
+  background-image: url('https://i.imgur.com/GD1ADWN.png'); /* cloud */
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  background-size: cover;
+  animation: cloudMove 60s linear infinite;
+  z-index: 0;
+}
+
+/* Cloud movement animation */
+@keyframes cloudMove {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+
+/* Container for centering content */
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1; /* Above cloud layer */
+}

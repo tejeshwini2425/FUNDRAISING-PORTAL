@@ -1,0 +1,154 @@
+/* Background and Layout */
+.sky-bg {
+  background: linear-gradient(to bottom, #f3f4f7, #dceefb);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dashboard {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #5e60ce;
+  animation: fadeIn 2s ease-in;
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: #ff6f91;
+}
+
+.tagline {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Container for layout split */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(135deg, #fbeeff, #d0e8ff);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.total {
+  border-left: 6px solid #4caf50;
+}
+
+.expense {
+  border-left: 6px solid #f44336;
+}
+
+.glow {
+  animation: glowPulse 3s ease-in-out infinite alternate;
+  border-left: 6px solid #03a9f4;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px #ffc3a0;
+  }
+  100% {
+    box-shadow: 0 0 25px #ff9a9e;
+  }
+}
+
+/* Leaderboard Section */
+.leaderboard-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 1rem;
+  border-radius: 20px;
+  background: #ffffffdd;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.leaderboard-section h2 {
+  margin-bottom: 1rem;
+  color: #ff4081;
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard-list li {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  animation: fadeIn 0.4s ease-in;
+}
+
+.rank {
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.name {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.amount {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Stats Cards Column */
+.stats-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 300px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
