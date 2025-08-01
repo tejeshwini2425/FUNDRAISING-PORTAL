@@ -1,0 +1,81 @@
+✅ FULL SETUP INSTRUCTIONS (FOR WINDOWS/MAC/LINUX)
+🛠 Prerequisites:
+Install Git: https://git-scm.com/downloads
+
+Create a GitHub account: https://github.com
+
+Optional: Use VS Code for easier management
+
+🔁 1. Open Terminal or Git Bash
+Navigate into your project folder:
+
+bash
+Copy code
+cd path/to/your/fundraising-portal
+📦 2. Initialize Git
+bash
+Copy code
+git init
+📝 3. Create a .gitignore file (optional but recommended)
+Create a file named .gitignore in the root of your project and add:
+
+bash
+Copy code
+node_modules/
+.env
+.DS_Store
+This keeps unnecessary files out of Git.
+
+📸 4. Stage and Commit All Files
+bash
+Copy code
+git add .
+git commit -m "Initial commit - fundraising portal"
+🌐 5. Create a GitHub Repository
+Go to https://github.com/new
+
+Name it something like fundraising-portal
+
+Keep it Public or Private
+
+DO NOT initialize with README (we already have files locally)
+
+Click Create Repository
+
+🔗 6. Connect Local Repo to GitHub
+You'll see instructions like this from GitHub — use them:
+
+bash
+Copy code
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/fundraising-portal.git
+git push -u origin main
+Replace YOUR-USERNAME with your GitHub username.
+
+✅ DONE! Your Project is Now on GitHub 🎉
+You can verify by visiting:
+
+bash
+Copy code
+https://github.com/YOUR-USERNAME/fundraising-portal
+🧠 Bonus (Optional):
+📌 Add README.md
+Create a file README.md to explain your project:
+
+markdown
+Copy code
+# Fundraising Portal
+
+This is a full-stack donation platform with features like:
+
+- Responsive UI
+- Donation tracking
+- Animated airplane scroll
+- Modern design
+Then commit and push it:
+
+bash
+Copy code
+git add README.md
+git commit -m "Added README"
+git push
